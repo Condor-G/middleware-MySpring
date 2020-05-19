@@ -1,0 +1,8 @@
+<beans>
+
+	<bean id="client" class="spring.core.RPCIoCConsumer">
+		<property name="serviceInterface" value="MathService"/>
+		<property name="ip" value="localhost"/>
+		<property name="port" value="9527"/>
+	</bean>
+</beans>	

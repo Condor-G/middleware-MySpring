@@ -1,0 +1,11 @@
+<beans>
+
+	<bean id="math" class="spring.impl.MathServiceImpl"></bean>
+	
+	<bean id="server" class="spring.core.RPCIoCProvider">
+		<property name="serviceInterface" value="MathService"/>
+		<property name="target" ref="math"/>
+		<property name="ip" value="localhost"/>
+		<property name="port" value="9527"/>
+	</bean>
+</beans>

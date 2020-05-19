@@ -1,0 +1,10 @@
+<beans>
+	<bean id="stu1" class="spring.impl.StudentImpl">
+		<property name="name" value = "XiaoMing" />
+		<property name="age" value = "18" />
+	</bean>
+	<bean id="tch1" class="spring.impl.TeacherImpl">
+		<property name="course" value="art"/>
+		<property name="guide" ref="stu1"/>
+	</bean>
+</beans>
